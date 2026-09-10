@@ -168,11 +168,6 @@ int main()
                 // Print the word that was misspelled
     //            cout << "Misspelled: " << checkWord << endl;
     //        }
-    //        
-    //        else
-    //        {
-    //            cout << "Nothing in file is misspelled." << endl;
-    //        }
     //    }
 
     //    checking.close();
