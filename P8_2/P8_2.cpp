@@ -139,7 +139,7 @@ int main()
 
     // Open the file to be checked
     //    ifstream checking;                              //declaring variable of ifstream data type for file to be checked
-    //    checking.open("InputFile.txt");                 //.... opening file to be checked
+    //    checking.open("word.txt");                      //opening file to be checked
     //    if (checking.fail())                            //condition if file to be checked fails to open
     //    {
     //        cout << "Error: Could not open file to be checked." << endl;
@@ -148,23 +148,23 @@ int main()
 
     // Go through each word in the file to be checked
     //    string checkWord;
-    //    while (checking >> checkWord)                   //extracting from InputFile 
+    //    while (checking >> checkWord)                   //while extracting from word.txt file 
     //    {
-    //        bool found = false;
+    //        bool found = false;                         //condition is set to false
     //        for (string w : words)                      //create new variable for word variable to go through loop so 
-                                                            //there is no shadowing
+                                                                //there is no shadowing
     //        {
     //            if (w == checkWord)                     //if words within both files match, it breaks the loop and 
-                                                            //doesnt get printed to the screen
+                                                                //doesnt get printed to the screen
     //            {
     //                found = true;
     //                break;
     //            } 
     //        }
-            // If the word is not contained in the words vector (which was loaded with dictionary words
+            // If the word is not contained in the words vector (which was loaded with dictionary words)
     //        if (!found) 
     //        {
-                // Print the word
+                // Print the word that was misspelled
     //            cout << "Misspelled: " << checkWord << endl;
     //        }
     //    }
