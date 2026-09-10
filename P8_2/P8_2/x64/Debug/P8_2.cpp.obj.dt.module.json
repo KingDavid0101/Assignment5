@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "P8_2\\x64\\Debug\\P8_2.obj",
+            "outputs": [
+                "P8_2\\x64\\Debug\\P8_2.cpp.obj.dt.module.json",
+                "P8_2\\x64\\Debug\\P8_2.cpp.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}
