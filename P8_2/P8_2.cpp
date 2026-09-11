@@ -47,7 +47,7 @@ int main()                                                                      
 
                                                                                 //Portion written by Deeana Aguiar
     // Open the file to be checked
-    ifstream checking(filename);                    //opening
+    ifstream checking("words.text");                //opening
     if (checking.fail())                            //condition if file to be checked fails to open
     {
         cout << "Error: Could not open file to be checked." << endl;
