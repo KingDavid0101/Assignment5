@@ -20,13 +20,7 @@
 
 using namespace std;
 
-//ofstream data type represents the output file stream and is used 
-//              to create files and to write information to files.
-//ifstreams data type represents the input file stream and is used 
-//              to read information from files.
-//              object is used to open a file for reading purposes only
-
-
+//Written by John Corcillo
 void runSpellcheck(const string& filename)          //creating an instance of the spellcheck class usng header
                                                             //and passing arguments
     {
@@ -52,10 +46,7 @@ void runSpellcheck(const string& filename)          //creating an instance of th
     dictionary.close();                             //closing dictionary since all words have been extracted
 
 
-
-
-
-
+    //Written by Deeana Aguiar
     // Open the file to be checked
     ifstream checking(filename);                    //opening file to be checked
     if (checking.fail())                            //condition if file to be checked fails to open
