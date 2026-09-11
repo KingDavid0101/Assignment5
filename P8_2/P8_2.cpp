@@ -8,7 +8,7 @@
 * *Description : A program the checks the spelling of a word within a file,
 ** then prints out the words it cannot find within the word list.
 **
-** Author : John Corcillo, Deeana Aguiar
+** Author : John Corcillo, Deeana Aguiar, David Kingman
 ** Date : 9 / 4 / 2026
 * *------------------------------------------------------------------------ - */
 
@@ -20,10 +20,10 @@
 
 using namespace std;
 
-int main()                                                                       //Portion written by John Corcillo
+int main()   
 {
     {
-    //Opening dictionary file
+    //Opening dictionary file; function written by John Corcillo
     ifstream dictionary("dictionary.txt");          //opening to stream dictionary file location
     if (dictionary.fail())                          //condition if dictionary file fails to open
     {
@@ -45,8 +45,8 @@ int main()                                                                      
     dictionary.close();                             //closing dictionary since all words have been extracted
 
 
-                                                                                //Portion written by Deeana Aguiar
-    // Open the file to be checked
+                                                                                
+    // Open the file to be checked, written by Deeana Aguiar
     ifstream checking("words.text");                //opening
     if (checking.fail())                            //condition if file to be checked fails to open
     {
