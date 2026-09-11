@@ -8,7 +8,7 @@
 ** Description: This program encrypts and decrypts a file using a
 **              random monoalphabet cipher based on a keyword.
 **
-** Author:      David Kingman
+** Author:      David Kingman, John Corcillo, Deeana Aguiar
 ** Date:        September 9, 2026
 ** -------------------------------------------------------------------------*/
 #include <iostream>
@@ -18,9 +18,8 @@
 
 using namespace std;
 
-// David Kingman
 // Creates the cipher alphabet from the keyword.
-string createCipherAlphabet(const string& keyword)
+string createCipherAlphabet(const string& keyword) // Function written by David Kingman
 {
     string cipherAlphabet = "";
     string alphabet = "ZYXWVUTSRQPONMLKJIHGFEDCBA";
@@ -47,7 +46,7 @@ string createCipherAlphabet(const string& keyword)
 }
 
 // Encrypts a single character using the cipher alphabet.
-char encryptCharacter(char character, const string& cipherAlphabet)
+char encryptCharacter(char character, const string& cipherAlphabet) // Function written by David Kingman
 {
     string alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
@@ -65,7 +64,7 @@ char encryptCharacter(char character, const string& cipherAlphabet)
 }
 
 // Decrypts a single character using the cipher alphabet.
-char decryptCharacter(char character, const string& cipherAlphabet)
+char decryptCharacter(char character, const string& cipherAlphabet) // Function written by John Corcillo
 {
     string alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
@@ -83,7 +82,7 @@ char decryptCharacter(char character, const string& cipherAlphabet)
 }
 
 // Encrypts or decrypts an entire file.
-void processFile(const string& inputFileName, const string& outputFileName,
+void processFile(const string& inputFileName, const string& outputFileName, //Function written by Deeana Aguiar
     const string& cipherAlphabet, bool encrypt)
 {
     ifstream inputFile(inputFileName);
@@ -107,7 +106,7 @@ void processFile(const string& inputFileName, const string& outputFileName,
     outputFile.close();
 }
 
-int main()
+int main() //Written by David Kingman
 {
     string keyword;
     string inputFileName;
