@@ -20,12 +20,11 @@
 
 using namespace std;
 
-//Written by John Corcillo
-void runSpellcheck(const string& filename)          //creating an instance of the spellcheck class usng header
-                                                            //and passing arguments
+int main()                                                                       //Portion written by John Corcillo
+{
     {
     //Opening dictionary file
-    ifstream dictionary("dictionary.txt");                            //opening to stream dictionary file location
+    ifstream dictionary("dictionary.txt");          //opening to stream dictionary file location
     if (dictionary.fail())                          //condition if dictionary file fails to open
     {
         cout << "Error: Could not open dictionary file." << endl;
@@ -46,9 +45,9 @@ void runSpellcheck(const string& filename)          //creating an instance of th
     dictionary.close();                             //closing dictionary since all words have been extracted
 
 
-    //Written by Deeana Aguiar
+                                                                                //Portion written by Deeana Aguiar
     // Open the file to be checked
-    ifstream checking(filename);                    //opening file to be checked
+    ifstream checking(filename);                    //opening
     if (checking.fail())                            //condition if file to be checked fails to open
     {
         cout << "Error: Could not open file to be checked." << endl;
